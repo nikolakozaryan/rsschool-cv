@@ -1,1 +1,1 @@
-# rsschool-cv
+https://nikolakozaryan.io/rsschool-cv/
