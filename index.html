@@ -5,10 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/519a8f3a27.js" crossorigin="anonymous"></script>
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="highlight/styles/default.min.css">
+  <script src="highlight/highlight.min.js"></script>
   <title>Nikolay Kozyrev CV</title>
 </head>
 <body>
@@ -45,7 +49,7 @@
             <h2>About myself</h2>
         </div>
         <div id="about-content">
-            I come to the RS School to learn new things and develop my coding skills! <br>
+            I came to the RS School to learn new things and develop my coding skills! <br>
             <blockquote>"Per aspera ad astra!", <cite>Lucius Annaeus Seneca</cite> </blockquote>
         </div>
       </section>
@@ -88,15 +92,17 @@
         <div id="code-content">
           <div>Example of code. The solution of codewars' task "Multiples of 3 or 5".</div>
           <div class="code">
-            <code>
-              <span class="pink">function</span> <span class="blue">solution</span>(<span class="red">number</span>){<br>
-                &nbsp;&nbsp;<span class="pink">let</span> <span class="red">sum</span>  = 0;<br>
-                &nbsp;&nbsp;<span class="pink">for</span> (<span class="pink">let</span> <span class="red">i</span> = 3; <span class="red">i</span> &lt; <span class="red">number</span>; <span class="red">i</span>++) {<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">if</span> ( <span class="red">i</span> % 3 === 0 || <span class="red">i</span> % 5 === 0 ) <span class="red">sum</span> += <span class="red">i</span>;<br>
-                  &nbsp;&nbsp;}<br>
-                  &nbsp;&nbsp;<span class="pink">return</span> <span class="red">sum</span>;<br>
-              }
-            </code>
+            <pre>
+<code>
+  function solution(number){
+    let sum = 0;
+    for(let i = 3; i > number; i++) {
+      if( i % 3 === 0 || i % 5 === 0 ) sum += i;
+    }
+    return sum;
+  }
+</code>
+            </pre>
           </div>
         </div>
       </section>
@@ -154,5 +160,6 @@
       <div>2021</div>
       <div><a href="https://github.com/nikolakozaryan" title="github: nikolakozaryan">NK</a></div>
   </footer>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
