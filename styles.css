@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Nanum Gothic', serif;
     color: #13347b;
@@ -20,6 +24,7 @@ aside {
 
 .main-container {
     width: 70%;
+    margin: 1em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +36,11 @@ aside {
 }
 
 .aside-section {
-    width: 90%;
+    width: 90%
+}
+
+.aside-section h2 {
+    margin: 0.5em 0;
 }
 
 .aside-section h2{
@@ -39,10 +48,10 @@ aside {
 }
 
 header {
-    height: 250px;
+    height: 300px;
     background: #80e0ab;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .headings {
@@ -77,17 +86,44 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 85%;
     width: 70%;
-    height: 100%
 }
 
 .header-photo {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 85%;
     width: 30%;
-    height: 100%;
     text-align: center;
+}
+
+.header-nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    background: #C6E2E9;
+}
+
+nav {
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+    list-style-type: none;
 }
 
 a:visited {
@@ -99,13 +135,7 @@ main {
     align-items: stretch;
 }
 
-#contacts {
-    font-size: 2em;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#languages {
+#languages-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,14 +150,9 @@ main {
     margin-bottom: 0.5em;
 }
 
-#skills {
+#skills-content, #contacts-content {
     display: flex;
-    text-align: center;
-    justify-content:space-around
-}
-
-.skill-item i {
-    font-size: 2em;
+    justify-content: center;
 }
 
 .main-container-heading {
@@ -149,7 +174,7 @@ code {
 }
 
 #profile-photo {
-    border: 10px solid #FFCAAF;
+    border: 10px solid #C6E2E9;
     border-radius: 50%;
     width: 65%;
 }
@@ -219,3 +244,22 @@ blockquote {
     width: 60%;
     margin: 10px auto;
 }
+
+#skills-content ul,#contacts-content ul {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#skills-content li, #contacts-content li {
+    margin: 10px;
+    list-style-type: none;
+    display: inline;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 420px) {}

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/519a8f3a27.js" crossorigin="anonymous"></script>
-  <title>CV</title>
+  <title>Nikolay Kozyrev CV</title>
 </head>
 <body>
   <header>
@@ -22,10 +22,25 @@
     <div class="header-photo">
       <img src="img/avatar.JPEG" alt="profile-photo" id="profile-photo">
     </div>
+    <div class="header-nav">
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#code">CODE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#languages">LANGUAGES</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
+
     <div class="main-container">
-      <section class="main-container-section">
+      <section class="main-container-section" id="about">
         <div class="main-container-heading">
             <h2>About myself</h2>
         </div>
@@ -34,7 +49,7 @@
             <blockquote>"Per aspera ad astra!", <cite>Lucius Annaeus Seneca</cite> </blockquote>
         </div>
       </section>
-      <section class="main-container-section">
+      <section class="main-container-section" id="education">
         <div class="main-container-heading">
             <h2>Education</h2>
         </div>
@@ -43,7 +58,7 @@
           <p>Faculty of Infocommunications (Information Security in Telecommunications).</p>
         </div>
       </section>
-      <section class="main-container-section">
+      <section class="main-container-section" id="experience">
         <div class="main-container-heading">
             <h2>Experience</h2>
         </div>
@@ -66,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="main-container-section" style="width: 90%;">
+      <section class="main-container-section" id="code" style="width: 90%;">
         <div class="main-container-heading">
             <h2>Code examples</h2>
         </div>
@@ -88,30 +103,22 @@
     </div>
 
     <aside>
-      <section class="aside-section">
+      <section class="aside-section" id="skills">
         <h2>Skills</h2>
-        <div id="skills">
-          <div class="skill-item">
-            <i class="fab fa-html5" title="HTML5"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt" title="CSS3"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js-square" title="JavaScript"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database" title="MySQL"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-code-branch" title="Git"></i>
-          </div>
+        <div id="skills-content">
+          <ul>
+            <li class="skill-item"><i class="fab fa-html5" title="HTML5"></i></li>
+            <li class="skill-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
+            <li class="skill-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
+            <li class="skill-item"><i class="fas fa-database" title="MySQL"></i></li>
+            <li class="skill-item"><i class="fas fa-code-branch" title="Git"></i></li>
+          </ul>
         </div>
       </section>
 
-      <section class="aside-section">
+      <section class="aside-section" id="languages">
         <h2>Languages</h2>
-        <div id="languages">
+        <div id="languages-content">
           <div class="language-item">
             <h4>Russian</h4>
             <div class="language-level">native speaker</div>
@@ -127,17 +134,21 @@
         </div>
       </section>
 
-      <section class="aside-section">
+      <section class="aside-section" id="contacts">
         <div><h2>My contacts</h2></div>
-        <div id="contacts">
-          <div><a href="tel:+375447749054" title="+375447749054"><i class="fas fa-phone-square-alt"></i></a></div>
-          <div><a href="mailto:kolyak770@gmail.com" title="kolyak770@gmail.com"><i class="fas fa-envelope"></i></a></div>
-          <div><a href="https://t.me/nikolay_kozyrev" title="Telegram" target="_blank"><i class="fab fa-telegram"></i></a></div>
-          <div><a href="https://github.com/nikolakozaryan" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></div>
+        <div id="contacts-content">
+          <ul>
+            <li><a href="tel:+375447749054" title="+375447749054"><i class="fas fa-phone-square-alt"></i></a></li>
+            <li><a href="mailto:kolyak770@gmail.com" title="kolyak770@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://t.me/nikolay_kozyrev" title="Telegram" target="_blank"><i class="fab fa-telegram"></i></a></li>
+            <li><a href="https://github.com/nikolakozaryan" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
         </div>
       </section>
     </aside>
+
   </main>
+
   <footer>
       <div><a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="rs-school-logo" style="height: 25px; width: auto;"></a></div>
       <div>2021</div>
