@@ -263,6 +263,10 @@ footer {
         height: 250px;
     }
 
+    .header-nav {
+        background: none;
+    }
+
     #profile-photo {
         border: 5px solid #C6E2E9;
         border-radius: 50%;
@@ -279,7 +283,7 @@ footer {
     }
 
     .dropbtn {
-        background-color: #C6E2E9;
+        padding-top: 10px;
         border: none;
     }
 
