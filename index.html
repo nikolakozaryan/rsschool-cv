@@ -5,36 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/519a8f3a27.js" crossorigin="anonymous"></script>
-  <title>CV</title>
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="highlight/styles/default.min.css">
+  <script src="highlight/highlight.min.js"></script>
+  <title>Nikolay Kozyrev CV</title>
 </head>
 <body>
   <header>
     <div class="header-name">
-      <div class="headings">
-        <h1>Nikolay Kozyrev</h1>
-        <h3>Junior Software Engineer</h3>
-      </div>
+      <h1>Nikolay Kozyrev</h1>
+      <h3>Junior Software Engineer</h3>
     </div>
     <div class="header-photo">
       <img src="img/avatar.JPEG" alt="profile-photo" id="profile-photo">
     </div>
+    <div class="header-nav dropdown">
+      <nav class="dropbtn">
+        <i class="fas fa-bars"></i>
+        <ul class="dropdown-content">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#code">CODE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#languages">LANGUAGES</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
+
     <div class="main-container">
-      <section class="main-container-section">
+      <section class="main-container-section" id="about">
         <div class="main-container-heading">
             <h2>About myself</h2>
         </div>
         <div id="about-content">
-            I come to the RS School to learn new things and develop my coding skills! <br>
+            I came to the RS School to learn new things and develop my coding skills! <br>
             <blockquote>"Per aspera ad astra!", <cite>Lucius Annaeus Seneca</cite> </blockquote>
         </div>
       </section>
-      <section class="main-container-section">
+      <section class="main-container-section" id="education">
         <div class="main-container-heading">
             <h2>Education</h2>
         </div>
@@ -43,7 +61,7 @@
           <p>Faculty of Infocommunications (Information Security in Telecommunications).</p>
         </div>
       </section>
-      <section class="main-container-section">
+      <section class="main-container-section" id="experience">
         <div class="main-container-heading">
             <h2>Experience</h2>
         </div>
@@ -66,52 +84,46 @@
           </div>
         </div>
       </section>
-      <section class="main-container-section" style="width: 90%;">
+      <section class="main-container-section" id="code" style="width: 90%;">
         <div class="main-container-heading">
             <h2>Code examples</h2>
         </div>
         <div id="code-content">
           <div>Example of code. The solution of codewars' task "Multiples of 3 or 5".</div>
           <div class="code">
-            <code>
-              <span class="pink">function</span> <span class="blue">solution</span>(<span class="red">number</span>){<br>
-                &nbsp;&nbsp;<span class="pink">let</span> <span class="red">sum</span>  = 0;<br>
-                &nbsp;&nbsp;<span class="pink">for</span> (<span class="pink">let</span> <span class="red">i</span> = 3; <span class="red">i</span> &lt; <span class="red">number</span>; <span class="red">i</span>++) {<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">if</span> ( <span class="red">i</span> % 3 === 0 || <span class="red">i</span> % 5 === 0 ) <span class="red">sum</span> += <span class="red">i</span>;<br>
-                  &nbsp;&nbsp;}<br>
-                  &nbsp;&nbsp;<span class="pink">return</span> <span class="red">sum</span>;<br>
-              }
-            </code>
+            <pre>
+<code>
+  function solution(number){
+    let sum = 0;
+    for(let i = 3; i > number; i++) {
+      if( i % 3 === 0 || i % 5 === 0 ) sum += i;
+    }
+    return sum;
+  }
+</code>
+            </pre>
           </div>
         </div>
       </section>
     </div>
 
     <aside>
-      <section class="aside-section">
+      <section class="aside-section" id="skills">
         <h2>Skills</h2>
-        <div id="skills">
-          <div class="skill-item">
-            <i class="fab fa-html5" title="HTML5"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3-alt" title="CSS3"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js-square" title="JavaScript"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database" title="MySQL"></i>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-code-branch" title="Git"></i>
-          </div>
+        <div id="skills-content">
+          <ul>
+            <li class="skill-item"><i class="fab fa-html5" title="HTML5"></i></li>
+            <li class="skill-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
+            <li class="skill-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
+            <li class="skill-item"><i class="fas fa-database" title="MySQL"></i></li>
+            <li class="skill-item"><i class="fas fa-code-branch" title="Git"></i></li>
+          </ul>
         </div>
       </section>
 
-      <section class="aside-section">
+      <section class="aside-section" id="languages">
         <h2>Languages</h2>
-        <div id="languages">
+        <div id="languages-content">
           <div class="language-item">
             <h4>Russian</h4>
             <div class="language-level">native speaker</div>
@@ -127,21 +139,47 @@
         </div>
       </section>
 
-      <section class="aside-section">
-        <div><h2>My contacts</h2></div>
-        <div id="contacts">
-          <div><a href="tel:+375447749054" title="+375447749054"><i class="fas fa-phone-square-alt"></i></a></div>
-          <div><a href="mailto:kolyak770@gmail.com" title="kolyak770@gmail.com"><i class="fas fa-envelope"></i></a></div>
-          <div><a href="https://t.me/nikolay_kozyrev" title="Telegram" target="_blank"><i class="fab fa-telegram"></i></a></div>
-          <div><a href="https://github.com/nikolakozaryan" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></div>
+      <section class="aside-section" id="contacts">
+        <h2>My contacts</h2>
+        <div id="contacts-content">
+          <ul>
+            <li><a href="tel:+375447749054" title="+375447749054"><i class="fas fa-phone-square-alt"></i></a></li>
+            <li><a href="mailto:kolyak770@gmail.com" title="kolyak770@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://t.me/nikolay_kozyrev" title="Telegram" target="_blank"><i class="fab fa-telegram"></i></a></li>
+            <li><a href="https://github.com/nikolakozaryan" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
         </div>
       </section>
     </aside>
+
   </main>
+
   <footer>
       <div><a href="https://rs.school/js/" target="_blank"><img src="img/rs_school_js.svg" alt="rs-school-logo" style="height: 25px; width: auto;"></a></div>
       <div>2021</div>
       <div><a href="https://github.com/nikolakozaryan" title="github: nikolakozaryan">NK</a></div>
   </footer>
+  <script>hljs.highlightAll();</script>
+  <script>
+    console.log(`
+      140/150
+
+      вёрстка валидная +10
+      вёрстка семантическая +20
+      для оформления СV используются css-стили +10
+      контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10
+      вёрстка адаптивная +10
+      есть адаптивное бургер-меню +10
+      на странице СV присутствует изображение +10
+      контакты для связи и перечень навыков оформлены в виде списка ul > li +10
+      CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+      CV содержит пример кода +10
+      CV содержит изображения-ссылки на выполненные проекты 0
+      CV выполнено на английском языке +10
+      выполнены требования к Pull Request +10
+      есть видеорезюме автора CV на английском языке 0
+      дизайн, оформление, качество выполнения CV +10
+    `);
+  </script>
 </body>
 </html>
